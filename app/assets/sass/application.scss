@@ -114,6 +114,8 @@ $iconLinkIconColor:#527945;
 @import 'iconLinks';
 @import 'heroBanner';
 @import 'contentAssets';
+@import 'accessibility';
+@import 'browser-alert';
 
 
 
@@ -253,9 +255,24 @@ p.ms-rteElement-textHighLight {
   }
 }
 
-.main-nav ul li a:hover {
-  background: #008244;
-  color: #fff;
+.main-nav ul li
+{
+ a
+{
+font-size: 21px;
+ 
+
+ &:hover {
+  background: #006837 !important;
+  color: #fff !important;
+}
+
+}
+
+ &.selected a {
+  background:darken(#006837, 5%) !important;
+  color: #fff !important;
+}
 }
 
 footer {
@@ -281,7 +298,7 @@ footer {
 
 .footerGlobal {
   nav ul a, p, span {
-    background-color: rgba(180, 213, 46, 0.7);
+    background-color: #bad83f;
   }
 }
 
@@ -405,7 +422,7 @@ footer {
       bottom: 20px;
       right: 25px;
       background-color: #F69;
-      &:focus, &:hover {
+       &:hover {
         background-color: #333;
       }
     }
@@ -565,6 +582,8 @@ footer {
 
 ul.areas p {
   color: #fff;
+  padding:5px;
+  text-shadow: 1px 1px 2px rgba(7, 7, 7, 1);
 }
 
 .promoListWebpart li {
@@ -589,10 +608,9 @@ ul.areas {
   float: left;
   width: 100%;
   h1, h2, h3, h4, h5 {
-    background: 0 0;
+    background:transparent;
   }
   p {
-    background: 0 0;
     font-size: 17px;
   }
   li {
@@ -615,6 +633,7 @@ ul.areas {
         text-align: center;
         color: #fff;
         font-family: oswald, sans-serif;
+        background:transparent;
       }
       img {
         width: 50%;
@@ -646,72 +665,72 @@ ul.areas {
       text-shadow: none;
     }
     &.green a {
-      &:focus, &:hover {
+       &:hover {
         background: #333;
       }
     }
     &.lime a {
-      &:focus, &:hover {
+       &:hover {
         background: #333;
       }
     }
     &.magenta a {
-      &:focus, &:hover {
+      &:hover {
         background: #333;
       }
     }
     &.orange a {
-      &:focus, &:hover {
+      &:hover {
         background: #333;
       }
     }
     &.pink a {
-      &:focus, &:hover {
+      &:hover {
         background: #333;
       }
     }
     &.purple a {
-      &:focus, &:hover {
+      &:hover {
         background: #333;
       }
     }
     &.yellow a {
-      &:focus, &:hover {
+     &:hover {
         background: #333;
       }
     }
     &.green a {
-      &:focus img, &:hover img {
+       &:hover img {
         background: rgba(255, 255, 255, 0.1);
       }
     }
     &.lime a {
-      &:focus img, &:hover img {
+       &:hover img {
         background: rgba(255, 255, 255, 0.1);
       }
     }
     &.magenta a {
-      &:focus img, &:hover img {
+      &:hover img {
         background: rgba(255, 255, 255, 0.1);
       }
     }
     &.orange a {
-      &:focus img, &:hover img {
+     &:hover img {
         background: rgba(255, 255, 255, 0.1);
       }
     }
     &.pink a {
-      &:focus img, &:hover img {
+      &:hover img {
         background: rgba(255, 255, 255, 0.1);
       }
     }
     &.purple a {
-      &:focus img, &:hover img {
+       &:hover img {
         background: rgba(255, 255, 255, 0.1);
       }
     }
     &.yellow a {
-      &:focus img, &:hover img {
+     &:hover img {
         background: rgba(255, 255, 255, 0.1);
       }
     }
@@ -791,7 +810,7 @@ ul.areas {
       background: #f6f6f6;
       .btn {
         color: #099;
-        &:focus, &:hover {
+       &:hover {
           background: #099;
           border-color: #099;
           color: #fff;
@@ -812,7 +831,7 @@ ul.areas {
       background: #f6f6f6;
       .btn {
         color: #CC0;
-        &:focus, &:hover {
+         &:hover {
           background: #CC0;
           border-color: #CC0;
           color: #fff;
@@ -833,7 +852,7 @@ ul.areas {
       background: #f6f6f6;
       .btn {
         color: #FC3;
-        &:focus, &:hover {
+        &:hover {
           background: #FC3;
           border-color: #FC3;
           color: #fff;
@@ -854,7 +873,7 @@ ul.areas {
       background: #f6f6f6;
       .btn {
         color: #F66;
-        &:focus, &:hover {
+        &:hover {
           background: #CC0;
           border-color: #CC0;
           color: #fff;
@@ -879,14 +898,14 @@ ul.areas {
     color: #C69;
   }
   .box.magenta.alt .btn {
-    &:focus, &:hover {
+    &:hover {
       background: #C69;
       border-color: #C69;
       color: #fff;
     }
   }
   &.magenta.alt .btn {
-    &:focus, &:hover {
+    &:hover {
       background: #C69;
       border-color: #C69;
       color: #fff;
@@ -905,7 +924,7 @@ ul.areas {
       background: #f6f6f6;
       .btn {
         color: #F69;
-        &:focus, &:hover {
+        &:hover {
           background: #F69;
           border-color: #F69;
           color: #fff;
@@ -926,7 +945,7 @@ ul.areas {
       background: #f6f6f6;
       .btn {
         color: #669;
-        &:focus, &:hover {
+       &:hover {
           background: #669;
           border-color: #669;
           color: #fff;
@@ -965,7 +984,7 @@ ul.areas {
   .btn.btn-primary {
     background: 0 0;
     border: 2px solid;
-    &:focus, &:hover {
+   &:hover {
       background-color: #fff !important;
       color: #333;
       border-color: #fff;
@@ -1898,3 +1917,20 @@ ul.iconLinks{
 .margin15px{
     margin:15px !important;
 }
+
+// hide search box until full search work has been completed
+
+#SearchBox{
+  display:none;
+}
+
+a:focus img
+{
+        outline:0;
+        
+       
+            -webkit-box-shadow: 0 0 0 4px $focus-color !important;
+            -moz-box-shadow: 0 0 0 4px $focus-color !important;
+            box-shadow: 0 0 0 4px $focus-color !important;
+       
+    } 
