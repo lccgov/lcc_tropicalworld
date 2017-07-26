@@ -431,6 +431,10 @@ footer {
        &:hover {
         background-color: #333;
       }
+
+      @media (max-width:1550px){
+          right: 60px;
+      }
     }
   }
 }
@@ -449,15 +453,16 @@ footer {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .heroBanner {
     padding: 0;
     .parkInfo {
       margin-top: 0;
       padding: 30px 0;
     }
-    .container {
+    .container-fluid {
       padding: 20px;
+      background:transparent;
       h1 {
         width: 100%;
         margin: 20px auto;
@@ -476,7 +481,7 @@ footer {
           font-size: 25px;
           line-height: 30px;
           background: 0 0;
-          padding: 0 0 20px;
+          padding: 20px;
           display: inline-block;
         }
         font-size: 15px;
@@ -491,6 +496,14 @@ footer {
         width: 100%;
         right: 0;
         display: block;
+        margin:0 20px;
+        width:auto;
+
+      }
+
+      .btn{
+        float:none !important;
+        display:block;
       }
     }
   }
